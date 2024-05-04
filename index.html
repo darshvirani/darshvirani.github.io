@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Darshan Virani</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <script>
+
+        document.addEventListener("DOMContentLoaded", function () {
+            const headingTexts = [
+                "Web Development",
+                "Mobile Development",
+                "Desktop Development"
+            ];
+            const heading = document.getElementById('postText2');
+
+            let currentIndex = 0;
+
+            function changeHeading() {
+                heading.textContent = headingTexts[currentIndex];
+
+                currentIndex++;
+
+                if (currentIndex >= headingTexts.length) {
+                    currentIndex = 0;
+                }
+            }
+            changeHeading();
+            setInterval(changeHeading, 2000);
+        })
+
+    </script>
+</head>
+<body>
+
+    <main>
+        
+        <div class="homeContainer">
+            <div class="homeTextContainer">
+                <div class="homeTextContent" id="homeText1">Hello, It's Me</div>
+
+                <div class="homeTextContent" id="homeText2">Darshan Virani</div>
+
+                <div class="homeTextContent" id="homeText3">
+                    <span class="postText" id="postText1">And I provide</span>
+                    <span class="postText" id="postText2"><b>Initial Heading</b></span>
+                </div>
+
+                <div class="homeTextContent" id="homeText4">“Facilitating engineering solutions with a wide range of
+                    Websites and technology skills...”
+                </div>
+
+                <a href="res/documents/cv.pdf"><div class="homeTextContent" id="homeText5"><Button id="downloadCV_Button">Download CV</Button></div></a>
+            </div>
+
+            <div class="homePhotoContainer">
+                <img src="res/images/Background.jpg" alt="Background Photo" >
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="navIcon">
+            <a href="mailto:darshanvirani203@gmail.com"><img src="res/images/emailLogo.png" alt="Email Logo" height="30px" class="navIconName"></a>
+            <a href=""><img src="res/images/whatsapp.png" alt="Whatsapp Logo" height="30px" class="navIconName"></a>
+            <a href="https://www.instagram.com/mr_darsh_virani_07_"><img src="res/images/instagram.png" alt="Instagram Logo" height="30px" class="navIconName"></a>
+            <a href="https://t.me/Mr_Darsh_Virani_07"><img src="res/images/telegram.png" alt="Telegram Logo" height="30px" class="navIconName"></a>
+        </div>
+    </footer>
+
+</body>
+</html>

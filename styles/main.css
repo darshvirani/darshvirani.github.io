@@ -1,0 +1,83 @@
+*{
+    color: white;
+}
+
+body, html {
+    margin: 0px;
+    background-color: black;
+    width: 100%;
+    height: 100%;
+}
+
+main {
+    width: 100%;
+    height: 100%;
+}
+
+footer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 5%;
+    padding-bottom: 10%;
+}
+
+.navIconName{
+    margin-right: 8px;
+}
+
+.homeContainer{
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.homeTextContainer{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 25px;
+}
+
+.homeTextContent{
+    margin-left: 20%;
+    margin-top: 16px;
+}
+
+#homeText2{
+    font-size: 50px;
+}
+
+#postText2{
+    color: red;
+}
+
+#homeText4{
+    font-size: 16px;
+}
+
+#downloadCV_Button{
+    border-radius: 20px; /* Adjust the value to change the roundness */
+    padding: 10px 20px; /* Adjust padding as needed */
+    background-color: #BBE7FE; /* Button background color */
+    color: black; /* Text color */
+    border: none; /* Remove default button border */
+    cursor: pointer; /* Show pointer cursor on hover */
+    /* Add any other styles as needed */
+    margin-top: 16px;
+}
+
+.homePhotoContainer{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.homePhotoContainer img {
+    object-fit: scale-down;
+    height: 70%;
+    margin: auto;
+}
